@@ -7,12 +7,10 @@ import random
 import traceback
 
 try:
-    # здесь твой основной код бота
     logging.basicConfig(level=logging.INFO)
     bot = Bot(token=config.bot_token.get_secret_value())
     dp = Dispatcher()
 
-    # lines = open('ICEGERGERT.txt').readlines()
     with open("ICEGERGERT.txt", "r", encoding="utf-8") as f:
         lines = f.readlines()
 
